@@ -1,17 +1,19 @@
 <script>
-	import css from '../styles/global.css';
+	import Embed from '$lib/embed.svelte';
+import css from '../styles/global.css';
 </script>
 
 <main>
 	<header>
 		<p class="subtitle">Made with Svelte</p>
 		<h1 class="title">Shichihachi's page</h1>
+		<Embed />
 	</header>
 	<div class="content">
 		<slot />
 	</div>
 	<footer>
-		<p>manducare dolorem tuum sicut subcinericius.</p>
+		<p>mihi nomen septuaginta octo.</p>
 	</footer>
 </main>
 

@@ -1,42 +1,27 @@
 <script>
-	console.log('Hello, you are currently viewing the index page');
+	let id = '703461363573456928';
 </script>
 
-<div style="justify-content: center; margin-top: 4rem;">
-	<div style="text-align: center;">
-		<a
-			href="https://cdn.discordapp.com/avatars/703461363573456928/6b59917a299cb342737ca59ff02f7057.png?size=1024"
-			target="_blank"
-			><img
-				alt='shichihachi' src="https://cdn.discordapp.com/avatars/703461363573456928/6b59917a299cb342737ca59ff02f7057.png?size=1024"
-			/>
-		</a>
-	</div>
+<div style="display: block; justify-content: center;" class="content">
+	<a href="https://discord.com/users/{id}">
+		<img src="https://lanyard.cnrad.dev/api/{id}?idleMessage=yeah im bored&borderRadius=0px" alt="Shichiha" />
+	</a> 
+	
 	<div>
-		<!---->
-		<p>
-			<span /> <strong>UID</strong>:
-			<span>703461363573456928</span>
-		</p>
-		<p>
-			<span /> <strong>Username</strong>:
-			<span style="color: rgb(228, 154, 255);"
-				><span>shichihachi#7009</span></span
-			>
-		</p>
-		<p>
-			<span /> <strong>Created</strong>:
-			<span style="color: rgb(129, 200, 134);">Sat, 25 Apr 2020 04:24:18 UTC</span>
+		<p style="padding: 10px; font-size:22px" class="description">
+			Hi, I'm Shichiha. a programmer. <br>If you want to know more, <br />reach me on discord!<br /> <br />
 		</p>
 	</div>
 </div>
 
 <style>
 	div {
-		animation: floating 2.7s infinite;
-		background-color: rgba(0, 0, 0, 0.312);
-		box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.306);
-		padding-left: 0px;
-		margin: 1rem;
+		background-color: rgb(16, 17, 19);
+		border-radius: 20px 20px 20px 20px;
+	}
+
+	.description {
+		color: white;
+		font-size: 20px;
 	}
 </style>
