@@ -1,0 +1,127 @@
+body {
+	background-color: #111;
+	color: #444;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+
+	@media (min-width: 768px) {
+		font-size: 16px;
+	}
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-1px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+p {
+	margin: 0;
+	padding: 10px;
+	transition: all 0.3s ease-in-out;
+	font-size: 23px;
+	max-width: fit-content;
+	max-height: fit-content;
+	&:hover {
+		box-shadow: 0 30px 30px rgba(0, 0, 0, 0.4);
+		color: #fff;
+		font-size: 24px;
+		@media (max-width: 768px) {
+			font-size: 23px;
+		}
+
+	}
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.top {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.SlightLeftMiddle {
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	transform: translate(20%, -30%);
+	@media (max-width: 768px) {
+		top: 20%;
+		left: 13%;
+		transform: translate(13%, -20%);
+	}
+}
+
+.reveal {
+	opacity: 0.2;
+	transform: scale(0.6);
+	transition: all 0.7s;
+	&:hover {
+		opacity: 1;
+		transform: scale(1);
+		box-shadow: 0 30px 30px rgba(0, 0, 0, 0.4);
+	}
+
+	@media (max-width: 768px) {
+		top: 50%;
+		left: 5%;
+		transform: translate(5%, 50%);
+		width: 130%;
+	}
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 3%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s ease-in-out;
+	float:left;
+
+	&:hover {
+		width: 5%;
+	}
+
+	@media (max-width: 768px) {
+		width: 20%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.5s ease-in-out;
+		&:hover {
+			width: 20%;
+		}
+		position: fixed;
+	}
+}
