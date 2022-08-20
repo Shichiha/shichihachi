@@ -4,14 +4,18 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" href="%svelte.assets%/favicon.png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<style src="../src/styles/global.scss"></style>
 	<title> Bee's nest </title>
 	%svelte.head%
 </head>
 
-<body>
+<body style="opacity: 0;transition:0.5s;">
 	<div>%svelte.body%</div>
+	<script>
+		setTimeout(() => {
+			document.querySelector('body').style.opacity = 1;
+		}, 900);1
+	</script>
 </body>
 
 </html>
