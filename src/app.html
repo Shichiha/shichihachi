@@ -9,12 +9,14 @@
 	%svelte.head%
 </head>
 
-<body style="opacity: 0;transition:0.5s;">
-	<div>%svelte.body%</div>
+<body>
+	<div style="opacity: 0;transition:0.5s;" class="wrapper">
+		<div>%svelte.body%</div>
+	</div>
 	<script>
 		setTimeout(() => {
-			document.querySelector('body').style.opacity = 1;
-		}, 900);1
+			document.querySelector('.wrapper').style.opacity = 1;
+		}, 900);
 	</script>
 </body>
 

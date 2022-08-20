@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 body {
 	max-width: 650px;
 	line-height: 1.6;
 	font-size: 20px;
 	color: #444;
 	padding: 0 10px;
-	font-family: Arial;
+	font-family: 'Open sans', sans-serif;
 	font-weight: 300;
 	background-color: #eeeeee;
 	transition: background-color 0.3s;
 	margin: 0;
-	padding:0;
+	padding: 0;
+	transition: 1s;
 }
 
 // remove scrollbar
@@ -18,7 +21,9 @@ body {
 	height: 0px;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
 	line-height: 1.2;
 }
 
@@ -59,24 +64,26 @@ body.dark-mode button {
 	left: 0;
 	height: 100%;
 	overflow: auto;
-	float:left;
+	float: left;
+	transition: background-color 0.3s;
 }
 
 .sidebar a {
 	display: block;
-	color: black;
+	color: white;
 	padding: 16px;
 	text-decoration: none;
-}
-
-.sidebar a.active {
-	background-color: #04aa6d;
-	color: white;
+	transition: 0.15s;
+	text-indent: 5px;
+	&::before {
+		content: '»  ';
+	}
 }
 
 .sidebar a:hover:not(.active) {
-	background-color: #555;
+	background-color: rgba(0, 0, 0, 0.425);
 	color: white;
+	text-indent: 10px;
 }
 
 @media screen and (max-width: 700px) {
@@ -111,8 +118,6 @@ body.dark-mode .sidebar {
 }
 
 .sidebar-content {
-	padding: 20px;
-
 	p {
 		margin: 0;
 	}
@@ -123,18 +128,17 @@ body.dark-mode .sidebar {
 }
 
 .content {
-	float:left;
+	float: left;
 	position: absolute;
 	top: 0;
 	left: 20%;
 	padding: 0px 16px;
-	
 }
 
 @media screen and (max-width: 700px) {
 	.content {
 		width: 100%;
 		height: auto;
-		position: static
+		position: static;
 	}
 }
