@@ -6,7 +6,7 @@
 	<h2>Contact</h2>
 	<a href='https://github.com/Shichiha'> Github </a>
     <a href='https://discord.com/users/{id}'>Discord</a>
-    <a href='twitter.com/00sh_chiha'> Twitter </a> <br>
+    <a href='https://twitter.com/00sh_chiha'> Twitter </a> <br>
 </div>
 
 <style>
