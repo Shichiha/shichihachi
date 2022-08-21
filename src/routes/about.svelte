@@ -5,9 +5,14 @@
 <div class="content">
 	<h1>Hey!</h1>
 	<span>
-		I'm a hobbyist who spends their time learning new technologies and building cool stuff.
+		I'm <span class="tooltip">Shichiha<span class="tooltiptext">(also known as shichihachi, or 78)</span></span>, a
+		hobbyist who spends their time learning new technologies and building cool stuff.
 		<br />
 		I'm currently a High School student aiming to become a full-stack developer.
+		<br />
+		That being said, I haven't made much.
+		<br />
+		here are some of the projects that I've made in the past.
 	</span>
 
 	<div class="Projects">
@@ -22,9 +27,7 @@
 </div>
 
 <style>
-	span {
-		font-size: 1.5rem;
-	}
+	
 
 	:global(body.dark-mode .Projects) {
 		filter: invert(1);

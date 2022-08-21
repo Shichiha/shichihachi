@@ -1,6 +1,6 @@
 <script>
-    import { page } from '$app/stores'
-    import { onMount } from 'svelte'
+	import css from '../styles/global.scss';
+	import { onMount } from 'svelte';
 	import Avatar from '../images/avatar.jpg';
 	let theme = 'light-mode';
 	onMount(() => {
@@ -12,21 +12,21 @@
 		theme = theme === 'light-mode' ? 'dark-mode' : 'light-mode';
 		localStorage.setItem('theme', theme);
 	}
-
 </script>
 
-<div class="sidebar">
-	<div class="sidebar-header">
+<div class="navbar">
+	<div class="navbar-header">
 		<center>
 			<img src={Avatar} alt="avatar" id="avatar" />
 		</center>
 	</div>
-	<div class="sidebar-content">
+	<div class="navbar-content">
 		<a href="/"> Home </a>
 		<a href="/about"> About me </a>
+		<a href="/contact"> Contact </a>
 	</div>
 	<button on:click={toggle}
-		><svg width="32px" height="32px" viewBox="0 0 32 32"
+		><svg width="16px" height="16px" viewBox="0 0 32 32"
 			><g id="Lager_94" data-name="Lager 94" transform="translate(0)"
 				><path
 					id="Path_70"
@@ -37,6 +37,8 @@
 		></button
 	>
 </div>
+
+<slot />
 
 <style>
 	#avatar {
@@ -49,5 +51,3 @@
 		transform: scale(1.1);
 	}
 </style>
-
-<slot />
