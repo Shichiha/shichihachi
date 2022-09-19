@@ -5,8 +5,8 @@
 <div class="content">
 	<h1>Hey!</h1>
 	<span>
-		I'm <span class="tooltip">Shichiha<span class="tooltiptext">(also known as shichihachi, or 78)</span></span>, a
-		hobbyist who spends their time learning new technologies and building cool stuff.
+		I'm Shichiha, a hobbyist who spends their time learning new technologies and building cool
+		stuff.
 		<br />
 		I'm currently a High School student aiming to become a full-stack developer.
 		<br />
@@ -25,12 +25,3 @@
 		<Project project="Shichiha/spiderlist" />
 	</div>
 </div>
-
-<style>
-	
-
-	:global(body.dark-mode .Projects) {
-		filter: invert(1);
-		color: black;
-	}
-</style>
