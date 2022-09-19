@@ -15,7 +15,7 @@
 <style lang="scss" global>
 	:local(a) {
 		@apply p-6 max-w-sm bg-white my-3 rounded-lg transition-colors dark:bg-slate-800 dark:hover:bg-blue-500 dark:hover:text-white hover:bg-blue-600 hover:text-white;
-		display:flex;
+		display: flex;
 		svg {
 			@apply mx-2;
 			path {

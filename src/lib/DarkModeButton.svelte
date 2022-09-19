@@ -29,6 +29,7 @@
 		></svg
 	></button
 >
+
 <style lang="scss">
 	button {
 		@apply mx-3 bg-transparent;

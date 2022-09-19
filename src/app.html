@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%svelte.assets%/favicon.png" />
+		<style src="../src/styles/global.scss"></style>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bee's nest</title>
+		%svelte.head%
+	</head>
 
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" href="%svelte.assets%/favicon.png" />
-	<style src="../src/styles/global.scss"></style>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title> Bee's nest </title>
-	%svelte.head%
-</head>
-
-<body>
-	%svelte.body%
-	<script>
-		setTimeout(() => {
-			document.querySelector('body').style.opacity = 1;
-		}, 900);
-	</script>
-</body>
-
+	<body>
+		%svelte.body%
+		<script>
+			setTimeout(() => {
+				document.querySelector('body').style.opacity = 1;
+			}, 900);
+		</script>
+	</body>
 </html>
